@@ -18,9 +18,10 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-6 text-sm text-gray-600">
           <Link href="/apps" className="hover:text-violet-700 transition-colors">Browse</Link>
           <Link href="/submit" className="hover:text-violet-700 transition-colors">Submit App</Link>
-          <Link href="/pro" className="hover:text-violet-700 transition-colors font-medium text-amber-600">
-            Pro ✦
+          <Link href="/founding-creators" className="hover:text-violet-700 transition-colors font-medium text-amber-600">
+            Founding Creators ✦
           </Link>
+          <Link href="/pro" className="hover:text-violet-700 transition-colors">Pro</Link>
           <Link
             href="/apps"
             className="bg-violet-600 text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-violet-700 transition-colors"
@@ -38,7 +39,8 @@ export function Navbar() {
         <div className="md:hidden border-t border-gray-100 px-4 py-3 flex flex-col gap-3 text-sm bg-white">
           <Link href="/apps" onClick={() => setOpen(false)}>Browse</Link>
           <Link href="/submit" onClick={() => setOpen(false)}>Submit App</Link>
-          <Link href="/pro" onClick={() => setOpen(false)} className="text-amber-600 font-medium">Pro ✦</Link>
+          <Link href="/founding-creators" onClick={() => setOpen(false)} className="text-amber-600 font-medium">Founding Creators ✦</Link>
+          <Link href="/pro" onClick={() => setOpen(false)}>Pro</Link>
         </div>
       )}
     </nav>

@@ -1,11 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Zap, Eye, GitFork, Lock, Star } from "lucide-react";
-import { MOCK_APPS } from "@/lib/data";
+import { MOCK_APPS, CREATORS } from "@/lib/data";
 import { AppCard } from "@/components/AppCard";
+import { ActivityFeed } from "@/components/ActivityFeed";
 
 export default function HomePage() {
   const featured = MOCK_APPS.filter((a) => a.featured);
   const trending = [...MOCK_APPS].sort((a, b) => b.views - a.views).slice(0, 4);
+  const foundingCreators = CREATORS.filter((c) => c.isFoundingCreator).slice(0, 6);
+  const totalForks = MOCK_APPS.reduce((s, a) => s + a.forks, 0);
+  const totalApps = MOCK_APPS.length;
 
   return (
     <main>
@@ -42,8 +47,8 @@ export default function HomePage() {
           </div>
 
           <div className="flex gap-8 mt-4 text-sm text-violet-200">
-            <span><strong className="text-white">8</strong> apps live</span>
-            <span><strong className="text-white">2.8k+</strong> forks</span>
+            <span><strong className="text-white">{totalApps}</strong> apps live</span>
+            <span><strong className="text-white">{(totalForks / 1000).toFixed(1)}k+</strong> forks</span>
             <span><strong className="text-white">6</strong> platforms supported</span>
           </div>
         </div>
@@ -110,6 +115,65 @@ export default function HomePage() {
             {trending.map((app) => (
               <AppCard key={app.id} app={app} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Live Activity + Founding Creators */}
+      <section className="max-w-7xl mx-auto px-4 py-14">
+        <div className="grid lg:grid-cols-2 gap-10">
+
+          {/* Live Activity */}
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
+                </span>
+                Live Activity
+              </h2>
+              <span className="text-xs text-gray-400">Updates in real time</span>
+            </div>
+            <div className="border border-gray-200 rounded-2xl p-4 bg-white">
+              <ActivityFeed />
+            </div>
+          </div>
+
+          {/* Founding Creators */}
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                <Star size={18} className="fill-amber-400 text-amber-400" /> Founding Creators
+              </h2>
+              <Link href="/founding-creators" className="text-sm text-violet-600 hover:underline flex items-center gap-1">
+                Apply <ArrowRight size={14} />
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {foundingCreators.map((creator) => (
+                <div key={creator.handle} className="flex items-center gap-2.5 p-3 bg-white border border-gray-200 rounded-2xl">
+                  <Image
+                    src={creator.avatar}
+                    alt={creator.displayName}
+                    width={36}
+                    height={36}
+                    className="rounded-full bg-gray-100 shrink-0"
+                    unoptimized
+                  />
+                  <div className="min-w-0">
+                    <div className="text-xs font-semibold text-gray-900 truncate">{creator.displayName}</div>
+                    <div className="text-xs text-gray-400 truncate">@{creator.handle}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <Link
+              href="/founding-creators"
+              className="mt-4 flex items-center justify-center gap-2 w-full py-2.5 border-2 border-dashed border-amber-300 rounded-2xl text-sm text-amber-700 font-medium hover:bg-amber-50 transition-colors"
+            >
+              {50 - foundingCreators.length} spots remaining — Apply now
+            </Link>
           </div>
         </div>
       </section>
