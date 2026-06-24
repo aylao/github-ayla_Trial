@@ -72,7 +72,7 @@ export default function FoundingCreatorsPage() {
           Founding Creator Program
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight max-w-2xl">
-          Be one of the first 50 creators on AppForge.
+          Be one of the first 50 creators on Forkable.
         </h1>
         <p className="text-gray-500 text-base max-w-xl leading-relaxed">
           We&apos;re hand-picking the builders who launch this platform. You get Pro free for life, permanent Founding Creator status, and a direct seat at the table.

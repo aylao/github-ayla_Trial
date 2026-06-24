@@ -23,7 +23,7 @@ const MONETIZATION_MODELS = [
   {
     icon: <TrendingUp size={20} className="text-violet-600" />,
     title: "Paid Fork Revenue",
-    desc: "Set a one-time or recurring price for forking your app. Each fork generates revenue for you — 80% goes to you, 20% to AppForge.",
+    desc: "Set a one-time or recurring price for forking your app. Each fork generates revenue for you — 80% goes to you, 20% to Forkable.",
     badge: "Core",
   },
   {
@@ -41,7 +41,7 @@ const MONETIZATION_MODELS = [
   {
     icon: <Shield size={20} className="text-green-600" />,
     title: "Enterprise Licensing",
-    desc: "Companies can license app templates for their internal teams. You set the seat price; AppForge handles invoicing.",
+    desc: "Companies can license app templates for their internal teams. You set the seat price; Forkable handles invoicing.",
     badge: "Coming Q4",
   },
 ];
@@ -75,7 +75,7 @@ export default function ProPage() {
       {/* Header */}
       <section className="text-center flex flex-col items-center gap-4">
         <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 rounded-full px-4 py-1.5 text-sm font-semibold">
-          AppForge Pro
+          Forkable Pro
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight max-w-2xl">
           Build an audience. Earn from your apps.
@@ -135,7 +135,7 @@ export default function ProPage() {
 
       {/* Monetization models */}
       <section>
-        <h2 className="text-xl font-bold text-gray-900 mb-2">How creators earn on AppForge</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-2">How creators earn on Forkable</h2>
         <p className="text-sm text-gray-500 mb-8">
           Multiple revenue streams, all designed around the fork-first economy.
         </p>
@@ -163,7 +163,7 @@ export default function ProPage() {
           <h2 className="text-lg font-bold text-gray-900">What could you earn?</h2>
           <p className="text-sm text-gray-600 max-w-sm">
             A popular app with 500 forks at $9 each = <strong>$3,600</strong> in revenue.
-            You keep <strong>$2,880</strong>. AppForge keeps $720.
+            You keep <strong>$2,880</strong>. Forkable keeps $720.
           </p>
           <p className="text-xs text-gray-400">
             500 forks is achievable — the top free apps on the platform already have 1,000+ forks.

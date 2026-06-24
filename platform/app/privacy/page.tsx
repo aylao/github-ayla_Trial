@@ -2,21 +2,21 @@ import { LegalPage, Placeholder } from "@/components/LegalPage";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy — AppForge",
+  title: "Privacy Policy — Forkable",
 };
 
 export default function PrivacyPage() {
   return (
     <LegalPage
       title="Privacy Policy"
-      subtitle="How AppForge collects, uses, and protects your information."
+      subtitle="How Forkable collects, uses, and protects your information."
       lastUpdated="[DATE]"
       sections={[
         {
           title: "1. Overview",
           content: (
             <p>
-              AppForge (&quot;we,&quot; &quot;us,&quot; &quot;our&quot;) is operated by <Placeholder>YOUR LLC NAME</Placeholder>.
+              Forkable (&quot;we,&quot; &quot;us,&quot; &quot;our&quot;) is operated by <Placeholder>YOUR LLC NAME</Placeholder>.
               This policy explains what data we collect, why we collect it, how we use it, and your rights
               regarding that data. We aim to be direct and plain-English about this — no dark patterns.
             </p>
@@ -152,7 +152,7 @@ export default function PrivacyPage() {
           title: "8. Children's privacy",
           content: (
             <p>
-              AppForge is not directed at children under 13. We do not knowingly collect personal information
+              Forkable is not directed at children under 13. We do not knowingly collect personal information
               from children under 13. If you believe a child has provided us with personal information, contact
               us at <Placeholder>PRIVACY_EMAIL</Placeholder> and we will delete it.
             </p>

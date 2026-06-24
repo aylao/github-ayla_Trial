@@ -9,7 +9,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "AppForge — Discover & Fork Vibe-Coded Apps",
+  title: "Forkable — Discover & Fork Vibe-Coded Apps",
   description: "Browse community-built apps with live previews. Fork into Lovable, Bolt, Replit, v0, or Cursor. Build from someone else's foundation.",
 };
 

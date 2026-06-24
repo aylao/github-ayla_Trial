@@ -1,23 +1,23 @@
 import { LegalPage, Placeholder } from "@/components/LegalPage";
 
 export const metadata = {
-  title: "DMCA Policy — AppForge",
+  title: "DMCA Policy — Forkable",
 };
 
 export default function DmcaPage() {
   return (
     <LegalPage
       title="DMCA Policy"
-      subtitle="AppForge's procedures for copyright takedown requests under the Digital Millennium Copyright Act."
+      subtitle="Forkable's procedures for copyright takedown requests under the Digital Millennium Copyright Act."
       lastUpdated="[DATE]"
       sections={[
         {
           title: "Safe Harbor notice",
           content: (
             <p>
-              AppForge operates as a platform hosting user-submitted content. We comply with the Digital
+              Forkable operates as a platform hosting user-submitted content. We comply with the Digital
               Millennium Copyright Act (17 U.S.C. § 512) and have designated a DMCA agent with the U.S.
-              Copyright Office. This qualifies AppForge for safe harbor protection, which means we are not
+              Copyright Office. This qualifies Forkable for safe harbor protection, which means we are not
               liable for infringing content posted by users, provided we act promptly upon receiving valid
               takedown notices.
             </p>
@@ -42,7 +42,7 @@ export default function DmcaPage() {
           content: (
             <>
               <p>
-                If you believe content on AppForge infringes your copyright, send a written notice to our
+                If you believe content on Forkable infringes your copyright, send a written notice to our
                 DMCA agent at <Placeholder>DMCA_EMAIL</Placeholder>. Your notice must include all of the
                 following — incomplete notices will not be acted on:
               </p>
@@ -52,7 +52,7 @@ export default function DmcaPage() {
                   claim has been infringed, or if multiple works are covered, a representative list.
                 </li>
                 <li>
-                  <strong>Identification of the infringing material</strong> — the URL(s) on AppForge where
+                  <strong>Identification of the infringing material</strong> — the URL(s) on Forkable where
                   the allegedly infringing content appears, specific enough for us to locate it.
                 </li>
                 <li>
@@ -111,7 +111,7 @@ export default function DmcaPage() {
                 <li>Your name, address, and telephone number</li>
                 <li>
                   A statement consenting to the jurisdiction of the federal court in your district (or, if
-                  outside the US, any judicial district in which AppForge may be found)
+                  outside the US, any judicial district in which Forkable may be found)
                 </li>
               </ol>
               <p className="mt-2">
@@ -126,7 +126,7 @@ export default function DmcaPage() {
           title: "Repeat infringers",
           content: (
             <p>
-              AppForge has a policy of terminating accounts of users who are repeat copyright infringers,
+              Forkable has a policy of terminating accounts of users who are repeat copyright infringers,
               in appropriate circumstances and at our discretion.
             </p>
           ),

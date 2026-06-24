@@ -183,7 +183,7 @@ export default function HomePage() {
         <div className="bg-gradient-to-br from-amber-400 via-amber-300 to-yellow-200 rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col gap-3 max-w-xl">
             <div className="flex items-center gap-2 text-amber-900 font-semibold text-sm">
-              <Lock size={14} /> AppForge Pro
+              <Lock size={14} /> Forkable Pro
             </div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">
               Submit premium apps. Earn from forks.
@@ -227,7 +227,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col gap-4 text-sm text-gray-400">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <span className="font-semibold text-violet-700 flex items-center gap-1">
-              <Zap size={14} className="fill-violet-600 text-violet-600" /> AppForge
+              <Zap size={14} className="fill-violet-600 text-violet-600" /> Forkable
             </span>
             <div className="flex flex-wrap justify-center gap-6">
               <Link href="/apps" className="hover:text-gray-700">Browse</Link>
@@ -235,7 +235,7 @@ export default function HomePage() {
               <Link href="/founding-creators" className="hover:text-gray-700">Founding Creators</Link>
               <Link href="/pro" className="hover:text-gray-700">Pro</Link>
             </div>
-            <span>© 2025 AppForge. Built for builders.</span>
+            <span>© 2025 Forkable. Built for builders.</span>
           </div>
           <div className="flex flex-wrap justify-center gap-6 border-t border-gray-100 pt-4 text-xs">
             <Link href="/terms" className="hover:text-gray-700">Terms of Service</Link>
