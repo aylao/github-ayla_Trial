@@ -224,16 +224,24 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="border-t border-gray-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-          <span className="font-semibold text-violet-700 flex items-center gap-1">
-            <Zap size={14} className="fill-violet-600 text-violet-600" /> AppForge
-          </span>
-          <div className="flex gap-6">
-            <Link href="/apps" className="hover:text-gray-700">Browse</Link>
-            <Link href="/submit" className="hover:text-gray-700">Submit</Link>
-            <Link href="/pro" className="hover:text-gray-700">Pro</Link>
+        <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col gap-4 text-sm text-gray-400">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <span className="font-semibold text-violet-700 flex items-center gap-1">
+              <Zap size={14} className="fill-violet-600 text-violet-600" /> AppForge
+            </span>
+            <div className="flex flex-wrap justify-center gap-6">
+              <Link href="/apps" className="hover:text-gray-700">Browse</Link>
+              <Link href="/submit" className="hover:text-gray-700">Submit</Link>
+              <Link href="/founding-creators" className="hover:text-gray-700">Founding Creators</Link>
+              <Link href="/pro" className="hover:text-gray-700">Pro</Link>
+            </div>
+            <span>© 2025 AppForge. Built for builders.</span>
           </div>
-          <span>© 2025 AppForge. Built for builders.</span>
+          <div className="flex flex-wrap justify-center gap-6 border-t border-gray-100 pt-4 text-xs">
+            <Link href="/terms" className="hover:text-gray-700">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-gray-700">Privacy Policy</Link>
+            <Link href="/dmca" className="hover:text-gray-700">DMCA Policy</Link>
+          </div>
         </div>
       </footer>
     </main>
